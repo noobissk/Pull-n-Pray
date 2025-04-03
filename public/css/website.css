@@ -7,7 +7,7 @@ body, html {
 
 /* Background image */
 body {
-    background: url('/public/images/account_background_purple_fullscreen.png') no-repeat center center fixed;
+    background: url('/images/account_background_purple_fullscreen.png');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -17,31 +17,109 @@ body {
 
 /* Main content container */
 .content {
-    background: rgba(255, 255, 255, 0.8); /* White box with transparency */
+    /* background: rgba(255, 255, 255, 0.8); White box with transparency */
+    background: rgb(80, 78, 80, 0.5);
+    height: 750px;
+    width: 600px;
+    display: flex;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* Button styles */
-.button-container {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     margin-top: 10px;
 }
-
 button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    background-color: #3498db;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent repetition */
+
     color: white;
+    
+    border: none;
+    
+    height: 100px;
+    margin: 10px;
+    padding: 10px 20px;
+    
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+
+.gold {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+    
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: url('/images/account_button_golden.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.silver {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    
+    width: 450px;
+    height: 50px;
+    margin: 10px;
+
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    background: url('/images/account_button_silver.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.copper {
+    background: url('/images/account_button_copper.png');
+}
+
+
+
 button:hover {
-    background-color: #2980b9;
+    text-decoration: underline;
+}
+button:focus {
+    text-decoration: underline;
 }
 
 /* Link styling */

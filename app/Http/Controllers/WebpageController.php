@@ -8,6 +8,6 @@ class WebpageController extends Controller
 {
     public function index()
     {
-        return view('web.main');
+        return view('web.account.inc.login');
     }
 }
