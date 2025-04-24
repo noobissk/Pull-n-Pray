@@ -40,6 +40,61 @@ body {
     align-items: center;
     margin-top: 10px;
 }
+
+input {
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+.gold {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+    
+    border: none;
+    outline: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    background: url('/images/account_button_golden.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.silver {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    
+    width: 450px;
+    height: 50px;
+    margin: 10px;
+    
+    border: none;
+    outline: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    background: url('/images/account_button_silver.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.copper {
+    background: url('/images/account_button_copper.png');
+}
+
+
 button {
     background-size: contain;
     background-position: center;
@@ -63,57 +118,6 @@ button {
     justify-content: center;
     text-align: center;
 }
-
-
-.gold {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    
-    width: 350px;
-    height: 50px;
-    margin: 10px;
-    
-    border: none;
-    outline: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    background: url('/images/account_button_golden.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.silver {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    
-    width: 450px;
-    height: 50px;
-    margin: 10px;
-
-    border: none;
-    outline: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    background: url('/images/account_button_silver.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.copper {
-    background: url('/images/account_button_copper.png');
-}
-
-
 
 button:hover {
     text-decoration: underline;

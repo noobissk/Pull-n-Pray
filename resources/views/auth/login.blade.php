@@ -1,4 +1,4 @@
-@extends('web.main')
+@extends('auth.layout')
 
 @section("content")
 
@@ -8,7 +8,8 @@
     <div class="container">
         <input class="silver" type="text" placeholder="email/name">
         <input class="silver" type="password" placeholder="password">
-        <button class="gold" onclick="alert('Button 1 clicked!')">Sign up</button>
+        
+        <button class="gold" onclick="alert('Button 1 clicked!')">Log in</button>
     </div>
 </div>
 @endsection
