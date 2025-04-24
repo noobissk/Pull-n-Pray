@@ -6,10 +6,14 @@
     {{-- <p>Click <a href="https://example.com" target="_blank">here</a> to visit an example page.</p> --}}
     
     <div class="container">
+        <h1>LOG IN</h1>
         <input class="silver" type="text" placeholder="email/name">
         <input class="silver" type="password" placeholder="password">
-        
-        <button class="gold" onclick="alert('Button 1 clicked!')">Log in</button>
+
+        <button class="gold" onclick="alert('Button 1 clicked!')">LOG IN</button>
+
+        <p>Forgot password? Click “<a href="https://example.com">here</a>”</p>
+        <p>Don't have an account? Click “<a href="https://example.com">here</a>”</p>
     </div>
 </div>
 @endsection
