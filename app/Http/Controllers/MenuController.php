@@ -8,6 +8,14 @@ class MenuController extends Controller
 {
     public function index()
     {
-        return view('menu.main');
+        $character = new character([
+            'name'=> 'Kaede Sumeragi',
+            'description'=>'lesbian',
+            'rarity'=> 2,
+        ]);
+        $character->save();
+        return view('menu.layout',[
+            'characters'=> character::all()
+        ]);
     }
 }
