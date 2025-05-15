@@ -7,7 +7,7 @@ use App\Http\Controllers\WebpageController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', [WebpageController::class, 'index']);
+Route::get('/home.html', [WebpageController::class, 'index']);
 
 Route::get('/auth/register',        [AuthController::class, 'register'])        -> name('register');
 Route::get('/auth/login',           [AuthController::class, 'login'])           -> name('login');
