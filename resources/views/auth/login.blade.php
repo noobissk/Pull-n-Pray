@@ -12,8 +12,8 @@
 
         <button class="gold" onclick="alert('Button 1 clicked!')">LOG IN</button>
 
-        <p>Forgot password? Click “<a href="https://example.com">here</a>”</p>
-        <p>Don't have an account? Click “<a href="https://example.com">here</a>”</p>
+        <p>Forgot password? Click “<a href="/auth/password-reset">here</a>”</p>
+        <p>Don't have an account? Click “<a href="/auth/register">here</a>”</p>
     </div>
 </div>
 @endsection

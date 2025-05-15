@@ -16,7 +16,7 @@
 
         <button class="gold" onclick="alert('Button 1 clicked!')">REGISTER</button>
 
-        <p>Already have an account? click “<a href="https://example.com">here</a>”</p>
+        <p>Already have an account? click “<a href="/auth/login">here</a>”</p>
     </div>
 </div>
 @endsection

@@ -11,8 +11,7 @@
         <input class="silver" type="text" placeholder="email">
         <button class="gold" onclick="alert('Button 1 clicked!')">SUBMIT</button>
 
-        <p>Forgot password? Click “<a href="https://example.com">here</a>”</p>
-        <p>To resend email, click “<a href="https://example.com">here</a>”</p>
+        <p>To resend email, click “<a href="/auth/password-reset">here</a>”</p>
     </div>
 </div>
 @endsection
