@@ -8,7 +8,7 @@ class Character extends Model
 {
     protected $fillable = [
         'name',
-        'descrition',
+        'description',
         'rarity'
     ];
 }

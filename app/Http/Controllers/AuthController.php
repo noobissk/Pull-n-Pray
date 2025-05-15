@@ -9,6 +9,7 @@ class AuthController extends Controller
     function register()
     {
         return view('auth.register');
+        
     }
     function login()
     {

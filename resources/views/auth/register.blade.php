@@ -15,7 +15,7 @@
         <input class="silver" type="password" placeholder="password repeat">
 
         <button class="gold" onclick="alert('Button 1 clicked!')">REGISTER</button>
-
+        
         <p>Already have an account? click “<a href="/auth/login">here</a>”</p>
     </div>
 </div>

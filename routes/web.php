@@ -10,7 +10,9 @@ use Inertia\Inertia;
 Route::get('/home.html', [WebpageController::class, 'index']);
 
 Route::get('/auth/register',        [AuthController::class, 'register'])        -> name('register');
+
 Route::get('/auth/login',           [AuthController::class, 'login'])           -> name('login');
+//Route::post('auth/login'[authcontroller::class, 'loginpost'])-> name('login.post'); > dorobit
 Route::get('/auth/password-reset',  [AuthController::class, 'passwordReset'])   -> name('passwordReset');
 Route::get('/auth/verification',    [AuthController::class, 'verification'])    -> name('verification');
 
