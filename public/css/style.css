@@ -323,12 +323,14 @@ ol {
 
 .header-bar-warp {
 	background: #081624;
-	padding: 39px 40px 0;
+	padding: 0px 40px 0;
 	-webkit-box-shadow: 0 0 9px 3px rgba(30, 66, 228, 0.24);
 	box-shadow: 0 0 9px 3px rgba(30, 66, 228, 0.24);
 }
 
 .site-logo {
+	padding-top: 5px;
+	padding-bottom: 5px;
 	float: left;
 }
 
@@ -336,8 +338,8 @@ ol {
 	float: right;
 	font-size: 16px;
 	font-weight: 500;
+	padding-top: 20px;
 	color: #EEEAE5;
-	padding-top: 3px;
 }
 
 .user-panel a {
@@ -357,6 +359,7 @@ ol {
 .main-menu li {
 	display: inline-block;
 	position: relative;
+	padding-top: 20px;
 }
 
 .main-menu li a {
@@ -365,7 +368,7 @@ ol {
 	font-weight: 500;
 	color: #EEEAE5;
 	margin-right: 40px;
-	padding-bottom: 28px;
+	padding-bottom: 5px;
 	position: relative;
 	padding-right: 20px;
 }
@@ -1568,7 +1571,7 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header-bar-warp {
-		padding: 39px 15px 0;
+		padding: 10px 15px 0;
 	}
 	.main-menu li a {
 		margin-right: 10px;
@@ -1633,7 +1636,7 @@ ol {
 
 @media only screen and (max-width: 767px) {
 	.header-bar-warp {
-		padding: 25px 20px 10px;
+		padding: 5px 20px 10px;
 	}
 	.main-menu.primary-menu {
 		display: none;

@@ -7,91 +7,26 @@
                     <h2>Latest News</h2>
                 </div>
                 <ul class="blog-filter">
-                    <li><a href="#">Racing</a></li>
-                    <li><a href="#">Shooters</a></li>
-                    <li><a href="#">Strategy</a></li>
-                    <li><a href="#">Online</a></li>
+                    <li><a href="/game_news">Games</a></li>
+                    <li><a href="/studio_news">Studio</a></li>
+                    <li><a href="/social_news">Social</a></li>
+                    <li><a href="/event_news">Events</a></li>
                 </ul>
                 <!-- Blog item -->
                 <div class="blog-item">
                     <div class="blog-thumb">
-                        <img src="/img/blog/1.jpg" alt="">
+                        <img src="/img/blog/1.png" alt="">
                     </div>
                     <div class="blog-text text-box text-white">
-                        <div class="top-meta">11.11.18  /  in <a href="">Games</a></div>
-                        <h3>The best online game is out now!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consecte-tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.....</p>
-                        <a href="#" class="read-more">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a>
-                    </div>
-                </div>
-                <!-- Blog item -->
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="/img/blog/2.jpg" alt="">
-                    </div>
-                    <div class="blog-text text-box text-white">
-                        <div class="top-meta">11.11.18  /  in <a href="">Games</a></div>
-                        <h3>The best online game is out now!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consecte-tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.....</p>
-                        <a href="#" class="read-more">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a>
-                    </div>
-                </div>
-                <!-- Blog item -->
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="/img/blog/3.jpg" alt="">
-                    </div>
-                    <div class="blog-text text-box text-white">
-                        <div class="top-meta">11.11.18  /  in <a href="">Games</a></div>
-                        <h3>The best online game is out now!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consecte-tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.....</p>
+                        <div class="top-meta">6.12.2025  /  in <a href="">Games</a></div>
+                        <h3>Kiwikaze studio's new game is in early-developement!</h3>
+                        <p>New game from Kiwikaze studios now in developement! Game with narrative focus and gameplay of both a horror, visual-novel and a cafe owner simulator in one package, the game's called Cafe of lost souls. What challenges is the studio and by extension the project facing? We've had our first look at the early-in-developement version and prepeared a report to satisfy your curiosity! You may find out the answers to all mentioned questions by reading more.</p>
                         <a href="#" class="read-more">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-5 sidebar">
                 <div id="stickySidebar">
-                    <div class="widget-item">
-                        <h4 class="widget-title">Trending</h4>
-                        <div class="trending-widget">
-                            <div class="tw-item">
-                                <div class="tw-thumb">
-                                    <img src="/img/blog-widget/1.jpg" alt="#">
-                                </div>
-                                <div class="tw-text">
-                                    <div class="tw-meta">11.11.18  /  in <a href="">Games</a></div>
-                                    <h5>The best online game is out now!</h5>
-                                </div>
-                            </div>
-                            <div class="tw-item">
-                                <div class="tw-thumb">
-                                    <img src="/img/blog-widget/2.jpg" alt="#">
-                                </div>
-                                <div class="tw-text">
-                                    <div class="tw-meta">11.11.18  /  in <a href="">Games</a></div>
-                                    <h5>The best online game is out now!</h5>
-                                </div>
-                            </div>
-                            <div class="tw-item">
-                                <div class="tw-thumb">
-                                    <img src="/img/blog-widget/3.jpg" alt="#">
-                                </div>
-                                <div class="tw-text">
-                                    <div class="tw-meta">11.11.18  /  in <a href="">Games</a></div>
-                                    <h5>The best online game is out now!</h5>
-                                </div>
-                            </div>
-                            <div class="tw-item">
-                                <div class="tw-thumb">
-                                    <img src="/img/blog-widget/4.jpg" alt="#">
-                                </div>
-                                <div class="tw-text">
-                                    <div class="tw-meta">11.11.18  /  in <a href="">Games</a></div>
-                                    <h5>The best online game is out now!</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="widget-item">
                         <div class="categories-widget">
                             <h4 class="widget-title">categories</h4>
@@ -105,6 +40,11 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="widget-item">
+                    <a href="#" class="add">
+                        <img src="/img/add.jpg" alt="">
+                        <p></p>
+                    </a>
                     <div class="widget-item">
                     <a href="#" class="add">
                         <img src="/img/add.jpg" alt="">

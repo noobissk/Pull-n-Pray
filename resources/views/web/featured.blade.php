@@ -3,9 +3,9 @@
     <div class="featured-bg set-bg" data-setbg="img/featured-bg.jpg"></div>
     <div class="featured-box">
         <div class="text-box">
-            <div class="top-meta">11.11.18  /  in <a href="">Games</a></div>
-            <h3>The game you’ve been waiting  for is out now</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum posuere porttitor justo id pellentesque. Proin id lacus feugiat, posuere erat sit amet, commodo ipsum. Donec pellentesque vestibulum metus...</p>
+            <div class="top-meta"> 6.12.2025 /  in <a href="">Games</a></div>
+            <h3>Kiwikaze studio's new game is in early-developement!</h3>
+            <p>New game from Kiwikaze studios now in developement! Game with narrative focus and gameplay of both a horror, visual-novel and a cafe owner simulator in one package, the game's called Cafe of lost souls. What challenges is the studio and by extension the project facing? We've had our first look at the early-in-developement version and prepeared a report to satisfy your curiosity....</p>
             <a href="#" class="read-more">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a>
         </div>
     </div>
