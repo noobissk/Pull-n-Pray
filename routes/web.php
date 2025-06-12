@@ -7,14 +7,15 @@ use App\Http\Controllers\WebpageController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/home.html', [WebpageController::class, 'index']);
+Route::get('/home.html', [WebpageController::class, 'index'])->name('index');
 
-Route::get('/auth/register',        [AuthController::class, 'register'])        -> name('register');
+Route::get('/auth/register', [AuthController::class, 'register'])->name('register');
+Route::post('/auth/register', [AuthController::class, 'store'] )->name('register.store');
 
-Route::get('/auth/login',           [AuthController::class, 'login'])           -> name('login');
+Route::get('/auth/login',[AuthController::class, 'login'])-> name('login');
 //Route::post('auth/login'[authcontroller::class, 'loginpost'])-> name('login.post'); > dorobit
-Route::get('/auth/password-reset',  [AuthController::class, 'passwordReset'])   -> name('passwordReset');
-Route::get('/auth/verification',    [AuthController::class, 'verification'])    -> name('verification');
+Route::get('/auth/password-reset',[AuthController::class, 'passwordReset'])-> name('passwordReset');
+Route::get('/auth/verification',[AuthController::class, 'verification'])-> name('verification');
 
 
 Route::get('/menu', [MenuController::class, 'index']);
