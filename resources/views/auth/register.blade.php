@@ -39,10 +39,10 @@
 
                 @enderror
 
+            </form>
             <button class="gold" type="submit">REGISTER</button>
             
             <p>Already have an account? click “<a href="/auth/login">here</a>”</p>
-        </form>
-    </div>
+        </div>
 </div>
 @endsection
