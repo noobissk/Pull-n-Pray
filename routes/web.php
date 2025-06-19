@@ -18,8 +18,8 @@ Route::get('/auth/password-reset',[AuthController::class, 'passwordReset'])-> na
 Route::get('/auth/verification',[AuthController::class, 'verification'])-> name('verification');
 
 
-Route::get('/menu', [MenuController::class, 'index']);
-Route::get('/game', [GameController::class, 'index']);
+Route::get('/menu/index', [MenuController::class, 'index']);
+// Route::get('/game', [GameController::class, 'index']);
 // Route::get('/', action: function () {
     // return Inertia::render('Welcome');
 // })->name('home');

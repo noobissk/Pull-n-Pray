@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href="{{ asset('img/favicon.ico') }}" rel="icon"/>
 
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="{{ asset('website.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/auth.css') }}" rel="stylesheet" />
     </head>
-    <body class="font-sans antialiased">
-        
+    <body>
+        @yield("content")
     </body>
 </html>
