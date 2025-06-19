@@ -1,51 +1,70 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 class AuthController extends Controller
 {
-    function register()
+    public function showRegister()
     {
         return view('auth.register');
-
-    // pozriet este raz video a v3etko skontrolova5
-        
     }
-    function store()
+
+    public function register(Request $request)
     {
-        $validated = request()->validate(
-            [   
-                'nickname' => 'required |min:3|max:20',
-                'name' =>'required |min:3|max:20',
-                'email' => 'required|email|unique:users,email',
-                'password' => 'required|confirmed|min:8'
-            ]
-            );
-        
-        $user = User::create(
-            [
-                'nickname' => $validated['nickname'],
-                'name' => $validated['name'],
-                'email' => $validated['email'],
-                'password' => Hash::make($validated['password'])
+        $request->validate([
+            'nickname' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
 
-            ]
-            );
-        return redirect()->route('index')->with('success','Account created Successfuly');
+        $user = User::create([
+            'name' => $request->nickname,
+            'nickname' => $request->nickname,
+            'email' => $request->email,
+            'password' => \Hash::make($request->password),
+        ]);
+
+        // Don't log them in
+        // Auth::login($user);
+
+        return redirect()->route('login')->with('success', 'Account created! You can now log in.');
     }
-    function login()
+
+
+    public function showLogin()
     {
         return view('auth.login');
     }
-    function passwordReset()
+
+    public function login(Request $request)
     {
-        return view('auth.passwordReset');
+        $login = $request->input('login');
+        $password = $request->input('password');
+
+        $fieldType = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'nickname';
+
+        if (Auth::attempt([$fieldType => $login, 'password' => $password])) {
+            $request->session()->regenerate();
+            return redirect()->intended('/menu/index');
+        }
+
+
+        return back()->withErrors([
+            'email' => 'Invalid credentials.',
+        ]);
     }
-    function verification()
+
+    public function logout(Request $request)
     {
-        return view('auth.verification');
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/auth/login');
     }
 }
+

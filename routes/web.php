@@ -9,24 +9,16 @@ use Inertia\Inertia;
 
 Route::get('/home.html', [WebpageController::class, 'index'])->name('index');
 
-Route::get('/auth/register', [AuthController::class, 'register'])->name('register');
-Route::post('/auth/register', [AuthController::class, 'store'] )->name('register.store');
+// Registration
+Route::get('/auth/register', [\App\Http\Controllers\AuthController::class, 'showRegister'])->name('register');
+Route::post('/auth/register', [\App\Http\Controllers\AuthController::class, 'register'])->name('register.store');
 
-Route::get('/auth/login',[AuthController::class, 'login'])-> name('login');
-//Route::post('auth/login'[authcontroller::class, 'loginpost'])-> name('login.post'); > dorobit
-Route::get('/auth/password-reset',[AuthController::class, 'passwordReset'])-> name('passwordReset');
-Route::get('/auth/verification',[AuthController::class, 'verification'])-> name('verification');
+// Login
+Route::get('/auth/login', [\App\Http\Controllers\AuthController::class, 'showLogin'])->name('login');
+Route::post('/auth/login', [\App\Http\Controllers\AuthController::class, 'login'])->name('login.store');
+
+// Logout
+Route::post('/auth/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
 
 
 Route::get('/menu/index', [MenuController::class, 'index']);
-// Route::get('/game', [GameController::class, 'index']);
-// Route::get('/', action: function () {
-    // return Inertia::render('Welcome');
-// })->name('home');
-
-// Route::get('dashboard', function () {
-    // return Inertia::render('Dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// require __DIR__.'/settings.php';
-// require __DIR__.'/auth.php';

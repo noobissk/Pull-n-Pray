@@ -7,10 +7,14 @@
     
     <div class="container">
         <h1>LOG IN</h1>
-        <input class="silver" type="text" placeholder="email/name">
-        <input class="silver" type="password" placeholder="password">
+        <form action="{{ route('login.store') }}" method="POST">
+            @csrf
+            <input class="silver" type="text" placeholder="email/nickname" name="login"> {{-- FIXED HERE --}}
+            <input class="silver" type="password" placeholder="password" name="password">
+            <button class="gold" type="submit">LOG IN</button>
+        </form>
 
-        <button class="gold" onclick="alert('Button 1 clicked!')">LOG IN</button>
+
 
         <p>Forgot password? Click “<a href="/auth/password-reset">here</a>”</p>
         <p>Don't have an account? Click “<a href="/auth/register">here</a>”</p>
