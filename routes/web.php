@@ -20,6 +20,17 @@ Route::post('/auth/login', [\App\Http\Controllers\AuthController::class, 'login'
 // Logout
 Route::post('/auth/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
 
+Route::middleware('auth')->group(function () {
+    Route::get('/menu/index', [MenuController::class, 'index'])
+         ->name('menu.index');
 
-Route::get('/menu/index', [MenuController::class, 'index']);
-// Route::post('/menu/lootbox/{rarity}', [MenuController::class, 'openLootbox'])->name('lootbox.open');
+    Route::get('/menu/inventory', [MenuController::class, 'inventory'])
+         ->name('inventory');
+
+    Route::post('/menu/lootbox/common', [MenuController::class, 'openCommon'])
+         ->name('lootbox.common');
+    Route::post('/menu/lootbox/rare',   [MenuController::class, 'openRare'])
+         ->name('lootbox.rare');
+    Route::post('/menu/lootbox/epic',   [MenuController::class, 'openEpic'])
+         ->name('lootbox.epic');
+});
