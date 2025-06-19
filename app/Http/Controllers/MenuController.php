@@ -1,18 +1,29 @@
 <?php
 
+
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use App\Models\Character;
-
 class MenuController extends Controller
 {
     public function index()
     {
+        // $loot = session('loot'); // optional loot result from last roll
 
-        return view('menu.main',[
-            'characters'=> Character::all()
-        ]);
+        // return view('menu.main', [
+        //     // 'characters' => Character::all(),
+        //     'loot' => $loot
+        // ]);
+        return view('menu.index');
+    }
+
+    public function openLootbox($rarity)
+    {
+        // // Get random item of specified rarity
+        // $item = Item::where('rarity', $rarity)->inRandomOrder()->first();
+
+        // // Save to session for display
+        // session()->flash('loot', $item ? "You got: {$item->name} ({$item->rarity})" : "No item found!");
+
+        return redirect()->route('menu.index'); // redirect to menu.index
     }
     //lootbox chance
 
