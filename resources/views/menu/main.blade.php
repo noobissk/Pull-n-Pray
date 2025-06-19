@@ -8,10 +8,21 @@
     <div class="container">
         <h1>Roll da Dice!</h1>
 
-        {{-- <button class="copper"  onclick="alert('Button 1 clicked!')">Loot box - common</button> --}}
-        <button class="silver"  onclick="alert('Button 1 clicked!')">Loot box - common</button>
-        <button class="silver"  onclick="alert('Button 1 clicked!')">Loot box - rare</button>
-        <button class="gold"    onclick="alert('Button 1 clicked!')">Loot box - epic</button>
+                <form action="{{ route('lootbox.common') }}" method="POST" style="display: inline;">
+            @csrf
+            <button class="silver" type="submit">Loot box - common</button>
+        </form>
+
+        <form action="{{ route('lootbox.rare') }}" method="POST" style="display: inline;">
+            @csrf
+            <button class="silver" type="submit">Loot box - rare</button>
+        </form>
+
+        <form action="{{ route('lootbox.epic') }}" method="POST" style="display: inline;">
+            @csrf
+            <button class="gold" type="submit">Loot box - epic</button>
+        </form>
+
 
         <p>// drops</p>
     </div>

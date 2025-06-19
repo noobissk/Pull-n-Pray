@@ -22,3 +22,8 @@ Route::post('/auth/logout', [\App\Http\Controllers\AuthController::class, 'logou
 
 
 Route::get('/menu/index', [MenuController::class, 'index']);
+
+//routy pre lootboxy
+Route::post('/menu/open/common', [MenuController::class, 'openCommon'])->name('lootbox.common');
+Route::post('/menu/open/rare', [MenuController::class, 'openRare'])->name('lootbox.rare');
+Route::post('/menu/open/epic', [MenuController::class, 'openEpic'])->name('lootbox.epic');
